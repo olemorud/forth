@@ -35,6 +35,9 @@ emptyState = ForthState []
 evalText :: Text -> ForthState -> Either ForthError ForthState
 evalText t state = runParsed state $ parseWords t
 
+run :: String -> Either ForthError ForthState
+run str = evalText (T.pack str) emptyState
+
 -- like foldl but applies a lists of functions that return Eithers to acc,
 -- probably a better way to do this
 runParsed :: a -> [a -> Either b a] -> Either b a
