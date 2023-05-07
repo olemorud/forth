@@ -40,8 +40,8 @@ Right ForthState [45]
 |      /      | [a, b, ...] -> [a/b, ...]     |  Pop two items, a and b, from stack. Push a/b to the top<br /> Returns Left DivisionByZero if b is 0 |
 |    DUP      | [a, b, ...] -> [a, a, b, ...] | Copy the top stack item and push it to the top       |
 |    DROP     | [a, b, ...] -> [b, ...]       | Discard the top of the stack                         |
-|    SWAP     | [a, b, ...] -> [b, a, ...]    | Pop two values, a and b, from the stack. Push them back in swapped order |
-|    OVER     | [a, b, ...] -> [b, a, b, ...] | Copy the next value after the top of the stack and push it to the top    |
+|    SWAP     | [a, b, ...] -> [b, a, ...]    | Pop two values, a and b, from the stack.<br />Push them back in swapped order |
+|    OVER     | [a, b, ...] -> [b, a, b, ...] | Copy the next value after the top of the<br /> stack and push it to the top    |
 | Any number  | [a, b, ...] -> [x, a, b, ...] | Push number to top of stack. Integers only |
 
 
